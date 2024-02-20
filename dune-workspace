@@ -1,0 +1,4 @@
+(lang dune 3.13)
+
+(lock_dir
+ (constraints ocaml-system))

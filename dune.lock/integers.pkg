@@ -1,0 +1,15 @@
+(version 0.7.0)
+
+(build
+ (progn
+  (when
+   %{pkg-self:dev}
+   (run dune subst))
+  (run dune build -p %{pkg-self:name} -j %{jobs})))
+
+(depends ocaml dune stdlib-shims)
+
+(source
+ (fetch
+  (url https://github.com/yallop/ocaml-integers/archive/0.7.0.tar.gz)
+  (checksum md5=201cf24143d7cb9a3921d572b6e6c42c)))

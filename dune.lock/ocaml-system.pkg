@@ -1,0 +1,6 @@
+(version 5.1.1)
+
+(build
+ (progn
+  (substitute gen_ocaml_config.ml.in gen_ocaml_config.ml)
+  (run ocaml gen_ocaml_config.ml)))
