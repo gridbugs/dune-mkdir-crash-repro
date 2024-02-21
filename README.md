@@ -1,6 +1,12 @@
 # Dune mkdir crash repro
 
 To reproduce, build dune from source and put the executable in your PATH (named `dune`).
+
+Solve dependencies:
+```
+dune pkg lock
+```
+
 Then run:
 
 ```
